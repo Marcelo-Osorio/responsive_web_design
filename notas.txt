@@ -1,0 +1,18 @@
+
+Responsive web desing
+# Que beneficios nos trae
+
+- **Mejor escalabilidad para desarrolladores**
+- **Para negocios el posicionamiento SEO es mejor**
+- **Para entrar en una mayor cantidad de usuarios**
+
+> Nota. El diseño en este caso en figma debe tener máximo 2 fuentes es una buena practica
+> 
+
+> Nota. Los @imports  en css no son una buena practica sobre todo si se tienen muchas fuentes
+>
+
+Seccion de Header
+
+Notas. Cualquier pagina o pantalla por temas de CEO deveria tener mejor un solo H1
+Notas. Por buenas practicas se recomienda no tener mas de un H1 en nuestro proyecto

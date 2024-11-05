@@ -1,0 +1,55 @@
+# Node modules
+node_modules/
+
+# Build directories
+dist/
+build/
+out/
+
+# Log files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# MacOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Coverage
+coverage/
+*.lcov
+
+# Temp files
+*.tmp
+*.temp
+
+# Images (except SVG)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.tiff
+*.ico
+
+# Allow SVG files
+!*.svg
+
+# Static cache
+.cache/
