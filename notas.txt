@@ -16,3 +16,4 @@ Seccion de Header
 
 Notas. Cualquier pagina o pantalla por temas de CEO deveria tener mejor un solo H1
 Notas. Por buenas practicas se recomienda no tener mas de un H1 en nuestro proyecto
+Notas. Se tiene que tener cuidado con los confligtos de herencia

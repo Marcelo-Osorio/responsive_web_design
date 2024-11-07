@@ -142,3 +142,106 @@ main {
     /*no esta en variable ya que se usa una sola vez*/
     color: #757575;
 }
+.main-tables-container {
+    font-family: "Inter", serif;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 270px;
+    max-width: 900px;
+}
+.main-tables-container h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: left;
+}
+.main-currency-table h2 {
+    padding-left: 15px;
+    color: #FF9536;
+}
+.main-commissions-table h2 {
+    padding-left: 13%;
+    color: var(--secondary-blue);
+}
+.main-currency-table,.main-commissions-table {
+    position: relative;
+}
+
+.table-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 20px;
+    width: 88%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.currency-type {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #B5B0AC;
+}
+.currency-value {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #757575;
+}
+.currency-type, .currency-value {
+    padding: 10px;
+    background-color: #FFFFFF;
+    margin: 1px;
+}
+.main-currency-table .table-content span {
+    display: inline-block;
+    height: 14px;
+    width: 17px;
+    margin-left: 4px;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+.bitcoin ,.ripple ,.stellar  {
+    background-image: url('./assets/icons/trending-down.svg');
+}
+.ethereum  {
+    background: url('./assets/icons/trending-up.svg');
+}
+
+.main-currency-table .main-table-container--update-info,.main-commissions-table .main-table-container--update-info {
+    padding: 5px;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 500px;
+    min-width: 250px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;   
+}
+.main-currency-table .main-table-container--update-info {
+    background-color: var(--soft-orange);
+}
+.main-commissions-table .main-table-container--update-info {
+    background-color: #E7F5FF;
+}
+.arrow_rigth,.arrow_left {
+    position: absolute;
+    bottom: 50%;
+    height: 20px;
+    width: 20px;
+}
+.arrow_rigth {
+    right: 0;
+    background-image: url('./assets/icons/mdi_keyboard_arrow_down_rigth.svg');
+}
+.arrow_left {
+    left: 0;
+    background-image: url('./assets/icons/mdi_keyboard_arrow_down_left.svg');
+}
+.main-commissions-table .table-content {
+    margin-left: auto;
+}
+/*temporal arreglar luego*/
+.main-currency-table,.main-commissions-table {
+    margin: 20px;
+}
