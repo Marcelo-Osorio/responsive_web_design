@@ -58,6 +58,7 @@ header img {
     margin-top: 40px;
     text-align: center;
     align-self: center;
+
 }
 .header--title-container h1 {
     font-size: 2.4rem;
@@ -330,3 +331,139 @@ main {
     line-height: 1.8rem;
     color: #808080;
 }
+.main-plans-detail {
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+}
+.plans--baner-image {
+    height: 387px;
+    max-width: 600px;
+    padding-top: 70px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('./assets/images/bitcoinbaby.png');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.plans--baner-image p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--just-white);
+}
+.plans--content {
+    width: 95%;
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0 auto;
+} 
+.plans--content .plans--content-title {
+    padding: 5px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--warm-black);
+}
+.plans--content .plans--content-description {
+    padding: 5px;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #757575;
+}
+.plans--payment {
+    position: relative;
+    height: auto;
+    width: 65%;
+    background-color: var(--just-white);
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.plans--payment-recommended {
+    position: absolute;
+    left: calc(50% - 52px); 
+    transform: translateY(-15px);
+    padding: 8px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--just-white);
+}
+.plans--payment-tarjet {
+    padding: 25px 20px;
+}
+.plans--payment-type {
+    padding: 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.plans--payment-value {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    font-family: "Inter", serif;
+}
+.plans--payment-value p {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+}
+.plans--payment-value span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: #363636;
+    margin: 2px;
+}
+.plans--payment-discount {
+    margin-bottom: 20px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: center;
+    color: #757575;
+}
+.plans--payment-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    background-color: var(--off-white);
+    outline: 0;
+}
+.plans--payment-button span {
+    display: inline-block;
+    margin: 3px;
+    background-image: url('./assets/icons/arrow-right.svg');
+    height: 24px;
+    width: 24px;
+}
+
+
+
