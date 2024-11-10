@@ -464,6 +464,31 @@ main {
     height: 24px;
     width: 24px;
 }
-
-
-
+footer {
+    display: flex;
+    align-items: center;
+    background-color: var(--bitcoin-orange);
+    padding: 50px 45px;
+}
+.footer-batatabit--references {
+    display: flex;
+    flex-wrap: wrap;   
+    flex-basis: 65%;
+}
+.footer-batatabit--references p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    text-align: center;
+    margin: 5px 25px;
+    
+}
+.footer-batatabit--logo {
+    flex-grow: 1;
+    background-image: url('./assets/icons/Group_18.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 85px;
+    width: 85px;
+}
