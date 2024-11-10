@@ -285,14 +285,17 @@ main {
     font-weight: 500;
     line-height: 1.8rem;
 }
-
+.product-cards--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(295px,1fr));
+    justify-items: center;
+}
 .product-detail--card {
-    width: 90%;
+    width: 85%;
     min-width: 288px;
-    max-width: 400px;
     height: 150px;
-    margin: 15px auto;
-    padding: 15px;
+    margin: 15px 0;
+    padding: 10px;
     background-color: var(--black);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .16);
