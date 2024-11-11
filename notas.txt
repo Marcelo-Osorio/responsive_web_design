@@ -20,3 +20,5 @@ Notas. Se tiene que tener cuidado con los confligtos de herencia
 Notas. Los inconos normalmente se colocan es span
 Notas. al momento de hacer un min width para delimitar 320 es lo minimo no hay celular mas pequeño que eso
 Notas. left: calc(50% - 30px); para posicionamiento al medio
+Notas. para el loading skeleton es mejor siempre saber cuanto medira tu contenedor en altura asi cargas por el momento el skeleton 
+son esa altura que ya sabes pero esa altura se tiene que dar por min-height con la posibilidad de crecer 
