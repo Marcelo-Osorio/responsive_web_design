@@ -23,6 +23,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 html {
     /*para poder usar el reem en parte de fuentes osea ajustamos el tamaño del documento para asi solamente usar reems en vez de px
@@ -347,4 +348,166 @@ main {
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--just-white);
+}
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.plans--title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.plans--title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.plans-container--slider {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    height: 410px;
+    padding: 10px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:x proximity;
+    scrollbar-color: var(--bitcoin-orange) var(--soft-orange);
+    scrollbar-width: thin;
+}
+.plans-container--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+}
+.plans-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
+.plans-container--card {
+    position: relative;
+    /* Trata de centrear el elemento de forma automatica solo funciona en chrome no en firefox*/
+    scroll-snap-align: center;
+    width: 70%;
+    /* Se hace esto ya que despues se posicionara con media queries despues */
+    min-width: 230px;
+    max-width: 300px;
+    margin: 50px 11px;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30,.16);
+}
+.plan-body-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding-bottom: 20px;
+}
+.recommended {
+    position: absolute;
+    left: calc(50% - 60px);
+    top: -15px;
+    font-family: "Inter", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    padding: 6px;
+    height: 31px;
+    width: 120px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    line-height: 5.3rem;
+    font-weight: bold;
+    position: relative;
+}
+.plan-card--price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: text-top;
+}
+.plans-container__access {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan-card--saving {
+    font-family: "Inter", serif;
+    font-size: 1.2rem;
+    color: #757575;
+    margin-top: 20px;
+}
+.plan-card--saving span {
+    display: block;
+    margin-bottom: 3px;
+}
+.plan-card--ca {
+    width: 150px;
+    height: 48px;
+    background-color: #faf8f7;
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/orange-arrow-right.svg');
+    /* para alinear con el piso osea el suelo de la caja */
+    vertical-align: text-bottom;
+}
+.plans-annual {
+    color: var(--bitcoin-orange);
+}
+.plans-annual--ca {
+    border: 2px solid var(--bitcoin-orange);
+}
+.plans-annual--ca span {
+    background-image: url('./assets/icons/orange-arrow-right.svg');
+}
+.plans-monthly {
+    color: var(--secondary-blue);
+}
+.plans-monthly--ca {
+    border: 2px solid var(--secondary-blue);
+}
+.plans-monthly--ca span {
+    background-image: url('./assets/icons/blue-arrow-right.svg');
+}
+.plans-biannual {
+    color: #d52c25;
+}
+.plans-biannual--ca {
+    border: 2px solid #d52c25;
+}
+.plans-biannual--ca span {
+    background-image: url('./assets/icons/red-arrow-right.svg');
 }
