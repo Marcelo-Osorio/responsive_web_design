@@ -141,7 +141,7 @@ main {
     font-weight: 500;
     line-height: 1.6rem;
     /*no esta en variable ya que se usa una sola vez*/
-    color: #757575;
+    color: #616161;
 }
 .main-tables-container {
     font-family: "Inter", serif;
@@ -181,7 +181,7 @@ main {
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.9rem;
-    color: #B5B0AC;
+    color: #6e6d6c;
 }
 .currency-value {
     font-weight: 400;
@@ -280,7 +280,7 @@ main {
 }
 .product-detail--title p {
     margin-bottom: 20px;
-    color: #808080;
+    color: #c4c3c3;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
@@ -329,7 +329,7 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #808080;
+    color: #c7c7c7;
 }
 .bitcoin-img-container {
     width: 100%;
@@ -407,7 +407,7 @@ main {
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(89, 73, 30,.16);
+    box-shadow: 0 4px 20px rgba(41, 33, 14, 0.16);
 }
 .plan-body-container {
     display: flex;
@@ -428,7 +428,7 @@ main {
     width: 120px;
     background-color: var(--bitcoin-orange);
     border-radius: 8px;
-    color: var(--just-white);
+    color: var(--just-white)
 }
 .plan-card--title {
     padding-top: 30px;
