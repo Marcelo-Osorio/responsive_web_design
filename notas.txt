@@ -17,3 +17,16 @@ Seccion de Header
 Notas. Cualquier pagina o pantalla por temas de CEO deveria tener mejor un solo H1
 Notas. Por buenas practicas se recomienda no tener mas de un H1 en nuestro proyecto
 Notas. Se tiene que tener cuidado con los confligtos de herencia
+Notas. Los inconos normalmente se colocan es span
+Notas. al momento de hacer un min width para delimitar 320 es lo minimo no hay celular mas pequeño que eso
+Notas. left: calc(50% - 30px); para posicionamiento al medio
+Notas. para el loading skeleton es mejor siempre saber cuanto medira tu contenedor en altura asi cargas por el momento el skeleton 
+son esa altura que ya sabes pero esa altura se tiene que dar por min-height con la posibilidad de crecer 
+
+Para empezar a trabajar con media queries hay que entender en que momento hacer el breakpont cunado nuestro diseño ya no se ve bien
+Los media queries como buenas practicas deben ir serparadas del archivo original para asi no obligar al usuario a descargar los estilos
+de mobile si esta en destokp o viceversa
+
+lighthouse ->  No ella podemos medir temas de accesibilidad, performanse, buenas practicas,
+progresive app nos dice que mas podemos mejorar para darle mejor experiencia al consumidor
+performanse -> que tanto se tarda en renderizar nuestra web
