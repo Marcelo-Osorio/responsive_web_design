@@ -142,32 +142,49 @@ main {
     /*no esta en variable ya que se usa una sola vez*/
     color: #757575;
 }
-.main-tables-container {
+.main-tables-container--slider {
+    position: relative;
     font-family: "Inter", serif;
-    width: 80%;
     margin: 0 auto;
     min-width: 270px;
     max-width: 900px;
+    display: flex;
+    gap: 15px;
+    height: auto;
+    padding: 20px 20px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:x proximity;
+    scrollbar-color: var(--bitcoin-orange) var(--soft-orange);
+    scrollbar-width: thin;
 }
-.main-tables-container h2 {
+.main-tables-container--slider h2 {
     margin-bottom: 10px;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.3rem;
     text-align: left;
 }
+.main-tables-container--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+}
+.main-tables-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
 .main-currency-table h2 {
-    padding-left: 15px;
+    padding-left: 13%;
+    align-self: flex-start;
     color: #FF9536;
 }
 .main-commissions-table h2 {
     padding-left: 13%;
     color: var(--secondary-blue);
+    align-self: flex-start;
 }
 .main-currency-table,.main-commissions-table {
     position: relative;
 }
-
 .table-content {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -207,7 +224,6 @@ main {
 .ethereum  {
     background: url('./assets/icons/trending-up.svg');
 }
-
 .main-currency-table .main-table-container--update-info,.main-commissions-table .main-table-container--update-info {
     padding: 5px;
     margin: 0 auto;
@@ -219,29 +235,15 @@ main {
     line-height: 1.8rem;   
 }
 .main-currency-table .main-table-container--update-info {
+    scroll-snap-align: center;
     background-color: var(--soft-orange);
 }
 .main-commissions-table .main-table-container--update-info {
     background-color: #E7F5FF;
 }
-.arrow_rigth,.arrow_left {
-    position: absolute;
-    bottom: 50%;
-    height: 20px;
-    width: 20px;
-}
-.arrow_rigth {
-    right: 0;
-    background-image: url('./assets/icons/mdi_keyboard_arrow_down_rigth.svg');
-}
-.arrow_left {
-    left: 0;
-    background-image: url('./assets/icons/mdi_keyboard_arrow_down_left.svg');
-}
-.main-commissions-table .table-content {
-    margin-left: auto;
-}
-/*temporal arreglar luego*/
 .main-currency-table,.main-commissions-table {
-    margin: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
